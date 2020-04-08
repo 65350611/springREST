@@ -56,6 +56,6 @@ public class User {
 
     @Override
     public String toString(/* no-op */) {
-        return ("User: " + this.username + " Usermail: " + this.email);
+        return ("User: " + this.username + " Usermail: " + this.email + " Passwort: " + this.password);
     }
 }
