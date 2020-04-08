@@ -38,6 +38,15 @@ public class Controller {
         userListFuerBeiSpiel.add(user);
         return user.toString();
     }
+    // Wieder GET Request per Postman and localhost/returnuser
+    // Funktioniert natürlich erst nachdem ein User oder mehrere durch die POST Methode erzeugt wurden.
+    // Löscht nach der Rückgabe den User.
+    @RequestMapping("/returnuser")
+    public User returnUser(){
+        User userFuerRueckgabe = userListFuerBeiSpiel.get((userListFuerBeiSpiel.size()-1));
+        userListFuerBeiSpiel.remove((userListFuerBeiSpiel.size()-1));
+        return userFuerRueckgabe;
+    }
 
 
 }
