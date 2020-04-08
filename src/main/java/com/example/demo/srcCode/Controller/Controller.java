@@ -30,7 +30,7 @@ public class Controller {
     }
 
     List<User> userListFuerBeiSpiel = new ArrayList<>();
-    //Auch mit Postman testen. Einen POST Request erstellen. Der Body muss alls User Attribute enthalten. Das Ganze
+    //Auch mit Postman testen. Einen POST Request erstellen. Der Body muss die geforderten User Attribute enthalten. Das Ganze
     //im JSON Format. Beispiel habe ich euch per Whatsapp geschickt.
     @RequestMapping(value = "/user", method = RequestMethod.POST)
     public String createUser(@RequestBody User user) {
